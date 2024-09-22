@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+section{
+    max-width: 1500px;
+    min-height: 40vh;
+    margin: 0 auto;
+    
+   
+
+}
+nav{
+    border-bottom: 1px solid rgb(212, 210, 210);
+    height: 15vh;
+
+}
+nav h1{
+    font-size: 40px;
+    text-transform:capitalize;
+       font-family: "Anton", sans-serif;
+       font-weight: 400;
+       font-style: normal;
+       letter-spacing: 2px;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+.content h2{
+   
+    text-transform:capitalize;
+       font-family: "Anton", sans-serif;
+       font-weight: 400;
+       font-style: normal;
+       letter-spacing: 2px;
+
+}
+input[type="email"]{
+    padding: 10px 30px;
+    width: 450px;
+    margin: 10px 0;
+    
+    
+}
+.phone input, .adress input{
+    width: 223px;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+textarea{
+    display: block;
+    width: 450px;
+}
+.right{
+    border: 1px solid gray;
+    padding: 10px;
+}
+.shoes{
+    overflow: scroll;
+    height: 400px;
+}
+.shoe1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    color: rgb(68, 66, 66);
+}
+.right img{
+    width: 100px;
+    margin: 10px;
+}
+.shoe1 p span{
+    margin-left:100px ;
+}
+.bottom p, .bottom h2{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    text-transform: capitalize;
+}
+.oder{
+    background-color: rgb(4, 206, 189);
+    color: rgb(255, 255, 255);
+    width: 400px;
+  display: block;
+  margin: 0 auto;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+       letter-spacing: 2px;
+}
+  /* footer section styling starts here */
+  #footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+ .footer{
+    background-color: rgb(36, 42, 61);
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+ }
+ #footer h2{
+    color: whitesmoke;
+    text-transform: capitalize;
+    margin: 20px 0;
+ }
+.cell{
+    
+    height: 200px;
+    width: 500px;
+}
+.cell a{
+display: block;
+color: white;
+font-family: "Abril Fatface", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+.cell p{
+width: 300px;
+margin: 20px 0;
+}
+.cell input{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+    /* footer section styling ends here */
+  
+@media screen and (max-width:1001px){
+    .left{
+        width: 90vw;
+    }
+    .right{
+        border: 1px solid gray;
+        width: 90%;
+        margin: 30px 0px;
+    }
+    .shoe1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        color: rgb(68, 66, 66);
+    }
+    .content{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+    }
+      /* footer section styling starts here */
+ #footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+ .footer{
+    background-color: rgb(36, 42, 61);
+    width: 95vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+ }
+ #footer h2{
+    color: whitesmoke;
+    text-transform: capitalize;
+    margin: 20px 0;
+ }
+.cell{
+    margin-left: 20px;
+    height: 200px;
+    width:90%;
+}
+.cell a{
+display: block;
+color: white;
+font-family: "Abril Fatface", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+.cell p{
+width: 300px;
+margin: 20px 0;
+}
+
+    /* footer section styling ends here */
+  
+}
+@media screen and (max-width:487px){
+
+    input[type="email"]{
+        padding: 10px 30px;
+        width: 90vw;
+        margin: 10px 0;
+        
+        
+    }
+    .phone input, .adress input{
+        width: 70vw;
+        padding: 10px 15px;
+        margin: 10px 0;
+    }
+    textarea{
+        display: block;
+        width: 90vw;
+    }
+    .oder{
+        background-color: rgb(4, 206, 189);
+        color: rgb(255, 255, 255);
+        width: 70vw;
+      display: block;
+      margin: 0 auto;
+        border: none;
+        padding: 10px 20px;
+        font-family: 'Courier New', Courier, monospace;
+           letter-spacing: 2px;
+    }
+    .shoes{
+        overflow: scroll;
+        height: 400px;
+    }
+    .shoe1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        background-color: rgb(221, 214, 214);
+        margin: 10px 0;
+        color: rgb(68, 66, 66);
+    }
+    .right img{
+        width: 70px;
+        margin: 10px;
+    }
+    .shoe1 p span{
+        margin-left:40px ;
+    }
+    .bottom p, .bottom h2{
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
+        text-transform: capitalize;
+    }
+    
+}

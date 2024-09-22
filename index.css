@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color:/*rgba(25, 24, 35, 0.8) rgba(14, 13, 21, 0.8)*/rgba(8, 7, 11, 0.8);
+}
+section{
+    max-width: 1500px;
+    min-height: 50vh;
+    margin: 0 auto;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s;
+}
+.activetab{
+    transform: translateY(0px);
+    opacity: 1;
+}
+nav{
+    height: 10vh;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 1px solid green;
+    background-color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color: rgb(90, 88, 88);
+    
+    padding: 0px 10px;/*
+        font-family: "Matemasie", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      
+   */   
+   
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+}
+.profile{
+    background-color: rgb(241, 205, 113);
+    border-radius: 10px;
+    padding: 10px 20px;
+
+}
+nav a{
+    color: black;
+}
+.profile i{
+    margin: 0 10px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.left{
+    width: 50%;
+    height: 70vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    padding-left: 100px;
+    color: white;
+}
+.left h1{
+ font-size: 40px;
+ text-transform:capitalize;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .left h2{
+        font-family: "Barlow Condensed", system-ui;
+        font-weight: 400;
+        font-style: normal;
+       font-size: 50px;
+       text-transform:capitalize;
+       margin: 0;
+
+  }
+  .left h4{
+    letter-spacing: 2px;
+ text-transform:capitalize;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.left p{
+  
+        font-family: "Barlow Condensed", system-ui;
+        font-weight: 600;
+        font-style: normal;
+        margin: 10px 0;
+        width: 30vw;
+      }
+      .left button{
+        border: none;
+        padding: 10px 30px;
+        background-color: rgb(241, 205, 113);
+        border-radius: 10px;
+        color: black;
+        font-family: "Barlow Condensed", system-ui;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: 2px;
+      }
+.right{
+    width: 50%;
+    height: 70vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+   
+}
+.right .img1{
+    background-color: rgba(218, 165, 32, 0.068);
+    background-size: 20%;
+    border-radius: 100px;
+    }
+    .right .img2{
+        width: 500px;
+        background-color: rgba(218, 165, 32, 0.068);
+        background-size: 20%;
+        border-radius: 100px;
+        }
+    /* shop by section styling starts here */
+#shopby{
+    background-color: rgb(241, 205, 113);
+    margin: 50px 0;
+    border-radius: 100px;
+    
+}
+#shopby .shoptop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+
+    padding: 0 20px;
+}
+#shopby .shoptop h1{
+    font-size: 50px;
+    text-transform:capitalize;
+    font-family: "Barlow Condensed", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+#shopby .shoptop span{
+    font-weight: 100;
+    
+}
+#shopby .shoptop button{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+   
+    letter-spacing: 2px;
+    border-radius: 10px;
+
+}
+#shopby .shopbtm{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 60vh;
+}
+#shopby .shopbtm .cube{
+    width: 20%;
+    margin: 10px;
+    
+    height: 200px;
+    font-family: "Barlow Condensed", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+#shopby .shopbtm .cube p{
+    margin: 20px;
+    font-family: "Barlow Condensed", system-ui;
+    font-weight: 600;
+    font-style: normal;
+}
+#shopby .shopbtm .cube a{
+    margin: 20px;
+    color: black;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+#shopby .shopbtm .cube h3{
+ margin: 20px;
+}
+    /* shop by section styling ends here */
+    /* grid section styling starts here */
+    #grid{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+
+    }
+    .grid1{
+        height: 300px;
+        width: 200px;
+        
+        margin: 20px;
+    }
+    
+    .grid1 img{
+        width: 100%;
+        height: 100%;
+    }  
+    /* grid section styling ends here */
+    /* banner section styling starts here */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bannleft{
+ 
+    width: 49vw;
+    height: 70vh;
+    background-image: url(imgs/home-banner.webp);
+    background-position: center;
+    background-size: cover;
+}
+.banner h4{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgb(255, 204, 74);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    
+}
+.banner h1{
+      font-size: 40px;
+      margin: 20px 0;
+      word-spacing: 3px;
+        font-family: "Abril Fatface", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+        color: white;
+      }
+      
+.bancontent{
+    
+    margin: 40px;
+   
+}
+.banner p{
+    margin: 10px 0;
+    color: white;
+    font-family: "Barlow Condensed", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    width: 65%;
+}
+.bannright{
+    width: 49vw;
+    height: 70vh;
+    background-image: url(imgs/banner2.webp);
+    background-position: center;
+    background-size: cover;
+}
+    /* banner section styling ends here */
+    /* footer section styling starts here */
+ #footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+ .footer{
+    background-color: rgb(36, 42, 61);
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+ }
+ #footer h2{
+    color: whitesmoke;
+    text-transform: capitalize;
+    margin: 20px 0;
+ }
+.cell{
+    
+    height: 200px;
+    width: 500px;
+}
+.cell a{
+display: block;
+color: white;
+font-family: "Abril Fatface", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+.cell p{
+width: 300px;
+margin: 20px 0;
+}
+.cell input{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+    /* footer section styling ends here */
+    /* responsive section styling starts here */
+
+    @media screen and (max-width:850px){
+            /* hed section styling starts here */
+
+        nav{
+            width: 100vw;
+        }
+        .content{
+            flex-direction: column;
+        }
+        .left{
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            padding-left: 10px;
+
+            order: 2;
+        }
+        .left p{
+          
+                font-family: "Barlow Condensed", system-ui;
+                font-weight: 600;
+                font-style: normal;
+                margin: 10px 0;
+                width: 90vw;
+              }
+       
+        .right{
+            width: 50%;
+            height: 40vh;
+           order: 1;
+        }
+        .right .img1{
+            background-color: rgba(218, 165, 32, 0.068);
+            background-size: 20%;
+            border-radius: 100px;
+            width: 300px;
+            }
+            
+            .right .img2{
+                background-color: rgba(218, 165, 32, 0.068);
+                background-size: 20%;
+                border-radius: 100px;
+                width: 300px;
+                margin-top: 30px;
+                }
+                
+    /* hed section styling ends here */
+            /* grid section styling starts here */
+    #grid{
+       flex-direction: column;
+
+    }
+    .grid1{
+        height: 400px;
+        width: 300px;
+    }
+    
+    /* grid section styling ends here */
+        /* shop by section styling starts here */
+#shopby{
+    background-color: rgb(241, 205, 113);
+    margin: 50px 0;
+    border-radius: 10px;
+    height: 170vh;
+    margin: 10px;
+    
+}
+#shopby .shoptop{
+    flex-direction: column;
+    height: 30vh;
+    padding: 0 20px;
+}
+#shopby .shopbtm{
+display: flex;
+justify-content:space-between;
+flex-direction: column;
+align-items: center;
+
+}
+#shopby .shopbtm .cube{
+    width: 90vw;
+    margin: 10px;
+    height: 40vh;
+    padding: 10px;
+     border: 1px solid black;
+}
+    /* shop by section styling ends here */
+    /* banner section styling starts here */
+.banner{
+    
+    flex-direction: column;
+}
+.bannleft{
+    width: 100vw;
+    height: 50vh;
+    background-image: url(imgs/home-banner.webp);
+    background-position: center;
+    background-size: cover;
+}
+.banner h4{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgb(255, 204, 74);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    
+}
+.banner h1{
+      font-size: 25px;
+      margin: 20px 0;
+      word-spacing: 3px;
+        font-family: "Abril Fatface", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+        color: white;
+      }
+      
+.bancontent{
+    
+    margin: 40px;
+   
+}
+.banner p{
+    margin: 10px 0;
+    color: white;
+    font-family: "Barlow Condensed", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    width: 100%;
+    font-size: 15px;
+}
+.bannright{
+    width: 100vw;
+    height: 50vh;
+    background-image: url(imgs/banner2.webp);
+    background-position: center;
+    background-size: cover;
+}
+    /* banner section styling ends here */
+    /* footer section styling starts here */
+ #footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+ .footer{
+    background-color: rgb(36, 42, 61);
+    width: 95vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+ }
+ #footer h2{
+    color: whitesmoke;
+    text-transform: capitalize;
+    margin: 20px 0;
+ }
+.cell{
+    margin-left: 20px;
+    height: 200px;
+    width:90%;
+}
+.cell a{
+display: block;
+color: white;
+font-family: "Abril Fatface", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+.cell p{
+width: 300px;
+margin: 20px 0;
+}
+
+    /* footer section styling ends here */
+    }
+    /* responsive section styling ends here */

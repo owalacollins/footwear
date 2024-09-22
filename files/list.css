@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color:/*rgba(25, 24, 35, 0.8) rgba(14, 13, 21, 0.8)*/rgba(8, 7, 11, 0.8);
+}
+section{
+    max-width: 1500px;
+    min-height: 40vh;
+    margin: 0 auto;
+    border: 1px solid red;
+   
+
+}
+#hed{
+/* transform: translateY(150px);
+    opacity: 0;
+    transition: 2s;*/
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.685)),url(../imgs/Group_140990_2x_3ef9317b-e647-4d10-b245-20bb15d5b5d8.webp);
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-direction: column;
+    padding-left: 40px;
+}
+#hed .arrow{
+ color: rgb(255, 255, 255);
+}
+#hed .cart{
+    background-color: yellow;
+    padding: 5px 50px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#hed .cart sup{
+    margin: 5px;
+}
+#hed .cart:hover{
+    background-color: rgba(3, 12, 99, 0.705);
+    color: white;
+}
+h4{
+    color: yellow;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+#hed h1{
+    margin: 20px 50px;
+    text-transform: uppercase;
+}
+#hed h4 i{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50px;
+}
+h4 a{
+    color: white;
+}
+/* products section styling starts here */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gallery{
+border: 1px solid rgb(236, 221, 6);
+border-radius: 20px;
+width: 20%;
+min-height: 400px;
+margin: 10px;
+padding: 10px;
+
+}
+.gallery .desc{
+    color: white;
+}
+.gallery img{
+    width: 150px;
+    height: 150px;
+}
+.desc h2{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+.desc p{
+    text-align: justify;
+    font-family: "Barlow Condensed", system-ui;
+    font-weight: 600;
+    font-style: normal;
+}
+.desc .size {
+ display: flex;
+ justify-content: space-between;
+ margin: 10px;
+}
+.desc span{
+    border: 1px solid white;
+    padding: 2.5px 6px;
+}
+.desc button{
+    padding: 10px 10px;
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    background-color: yellow;
+    color: black;
+    display: block;
+    margin: 10px auto;
+}
+.desc i{
+    font-size: 15px;
+    margin: 10px 0;
+}
+.gallery:hover{
+   background-color: white;
+   transition: 1s;
+    
+}
+.desc:hover{
+    color: black;
+    transition: 1s;
+}
+
+/* products section styling ends here */
+
+/* cart page styling starts here */
+
+#cartsimespage{
+    display: flex;
+    flex-direction: row;
+
+}
+.cartsitem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    height: 200px;
+    margin: 20px;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid yellow;
+    border-top: 1px solid yellow;
+}
+.cartsitem img{
+    width: 150px ;
+    height: 150px;
+}
+.cartsitem p{
+    font-size: 19x;
+    font-family: monospace;
+}
+.cartsitem input[type='number']{
+ background: transparent;
+ border:1px solid yellow;
+  width: 100px;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+}
+.cartsitem input[type='submit']{
+    background-color: rgb(8, 151, 79);
+    border:none;
+    padding: 5px;
+    color: white;
+
+}
+.cartsitem p i{
+    color: red;
+    
+}
+.total{
+    font-size: 20px;
+}
+.totals{
+    border: 1px solid yellow;
+    padding: 20px;
+    text-align: center;
+    height: 250px;
+    margin: 50px 10px;
+    color: white;
+    width: 300px;
+}
+.totals h1{
+    text-transform:uppercase;
+    margin: 10px 0px;
+}
+
+.totals p{
+    margin: 10px 0px;
+    
+}
+.totals  button{
+    padding: 10px 20px;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+/* cart page styling ends here */
+  /* footer section styling starts here */
+  #footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+ .footer{
+    background-color: rgb(36, 42, 61);
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+ }
+ #footer h2{
+    color: whitesmoke;
+    text-transform: capitalize;
+    margin: 20px 0;
+ }
+.cell{
+    
+    height: 200px;
+    width: 500px;
+}
+.cell a{
+display: block;
+color: white;
+font-family: "Abril Fatface", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+.cell p{
+width: 300px;
+margin: 20px 0;
+}
+.cell input{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+    /* footer section styling ends here */
+  
+/* responsive section styling starts here */
+  @media screen and (max-width:931px){
+    .gallery{
+        border: 1px solid rgb(236, 221, 6);
+        border-radius: 20px;
+        width: 40%;
+        min-height: 400px;
+        margin: 10px;
+        padding: 10px;
+        
+        }
+        /* cart page styling starts here */
+
+#cartsimespage{
+    display: flex;
+    flex-direction: column;
+
+}
+.cartsitem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 200px;
+    margin: 20px;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid yellow;
+    border-top: 1px solid yellow;
+}
+
+.cartsitem input[type='submit']{
+    background-color: rgb(8, 151, 79);
+    border:none;
+    display: block;
+    margin: 10px 0px;
+    padding: 5px;
+    color: white;
+
+}
+
+.totals{
+    border: 1px solid yellow;
+    padding: 20px;
+    text-align: center;
+    height: 250px;
+    display: block;
+    margin: 50px auto;
+    color: white;
+    width: 90vw;
+}
+
+/* cart page styling ends here */
+
+  /* footer section styling starts here */
+  #footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+ .footer{
+    background-color: rgb(36, 42, 61);
+    width: 95vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+ }
+ #footer h2{
+    color: whitesmoke;
+    text-transform: capitalize;
+    margin: 20px 0;
+ }
+.cell{
+    margin-left: 20px;
+    height: 200px;
+    width:90%;
+}
+.cell a{
+display: block;
+color: white;
+font-family: "Abril Fatface", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+.cell p{
+width: 300px;
+margin: 20px 0;
+}
+
+    /* footer section styling ends here */
+  
+  }
+  @media screen and (max-width:662px){
+
+    .cartsitem{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 90vw;
+        height: auto;
+        margin: 20px;
+        color: white;
+        padding: 10px;
+        border: 1px solid yellow;
+        border-top: 1px solid yellow;
+    }
+    .cartsitem img{
+        width: 150px ;
+        margin-bottom: 20px;
+        height: 150px;
+    }
+    .cartsitem p{
+        font-size: 19x;
+        font-family: monospace;
+        margin: 15px 0;
+    }
+    
+  }
+  @media screen and (max-width:475px){
+    .gallery{
+        border: 1px solid rgb(236, 221, 6);
+        border-radius: 20px;
+        width: 98%;
+        min-height: 400px;
+        margin: 10px 5PX;
+        padding: 10px;
+        
+        }
+        /* cart page styling starts here */
+
+
+.cartsitem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    margin: 20px;
+    color: white;
+    padding: 10px;
+    border: 1px solid yellow;
+    border-top: 1px solid yellow;
+}
+.cartsitem img{
+    width: 150px ;
+    margin-bottom: 20px;
+    height: 150px;
+}
+.cartsitem p{
+    font-size: 19x;
+    font-family: monospace;
+    margin: 15px 0;
+}
+
+
+.cartsitem p i{
+    color: red;
+    
+}
+.total{
+    font-size: 20px;
+}
+.totals{
+    border: 1px solid yellow;
+    padding: 20px;
+    text-align: center;
+    height: 250px;
+    margin: 50px auto;
+    color: white;
+    width: 300px;
+}
+.totals h1{
+    text-transform:uppercase;
+    margin: 10px 0px;
+}
+
+.totals p{
+    margin: 10px 0px;
+    
+}
+.totals  button{
+    padding: 10px 20px;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+/* cart page styling ends here */
+  }
+
+/* responsive section styling ends here */
