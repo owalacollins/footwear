@@ -3,75 +3,114 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
-}
-body{
-    background-color:/*rgba(25, 24, 35, 0.8) rgba(14, 13, 21, 0.8)*/rgba(8, 7, 11, 0.8);
+    
 }
 section{
-    max-width: 1500px;
+    max-width: 1400px;
     min-height: 50vh;
+    border: 1px solid red;
     margin: 0 auto;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 2s;
+
 }
-.activetab{
-    transform: translateY(0px);
-    opacity: 1;
+#hed{
+    background: url(imgs/back.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
 }
-nav{
-    height: 10vh;
-    width: 70%;
-    margin: 10px auto;
-    border-radius: 10px;
-    border: 1px solid green;
-    background-color: white;
+.topnav{
+    height: 7vh;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
     display: flex;
-    justify-content:space-between;
+    justify-content: center;
     align-items: center;
-    color: rgb(90, 88, 88);
+    color: rgb(230, 230, 230);
     
-    padding: 0px 10px;/*
-        font-family: "Matemasie", sans-serif;
+        font-family: "Kay Pho Du", serif;
         font-weight: 400;
         font-style: normal;
       
-   */   
+      
+    }
+.midnav{
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 20px;
+}
+#hed h3{
+        font-family: "Kay Pho Du", serif;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+}
+.midnav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
    
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 300;
+}
+.midnav ul li {
+    list-style: none;
+    margin: 0px 20px;
+    font-family: "Kay Pho Du", serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 15px;
 }
-.profile{
-    background-color: rgb(241, 205, 113);
-    border-radius: 10px;
+ul li a {
+    color: rgb(78, 76, 76);
+    text-transform: capitalize;
+}
+.downnav{
+    height:auto;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+.downnav p{
+    margin: 20px;
+}
+.downnav button{
     padding: 10px 20px;
+    width: 170px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+}
+.downnav h1{
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.downnav button:hover{
+ background-color: wheat;
+ color: black;
+ border: 2px solid white;
+transition: 1s;
+}
+/*  content styling*/
 
-}
-nav a{
-    color: black;
-}
-.profile i{
-    margin: 0 10px;
-}
 .content{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding: 20px;
+
 
 }
 .left{
-    width: 50%;
-    height: 70vh;
+    
     
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items:flex-start;
     flex-direction: column;
-    padding-left: 100px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .left h1{
  font-size: 40px;
@@ -104,179 +143,163 @@ nav a{
         margin: 10px 0;
         width: 30vw;
       }
-      .left button{
-        border: none;
-        padding: 10px 30px;
-        background-color: rgb(241, 205, 113);
-        border-radius: 10px;
-        color: black;
-        font-family: "Barlow Condensed", system-ui;
-        font-weight: 600;
-        font-style: normal;
-        letter-spacing: 2px;
-      }
-.right{
-    width: 50%;
-    height: 70vh;
-    
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction: column;
-   
-}
-.right .img1{
-    background-color: rgba(218, 165, 32, 0.068);
-    background-size: 20%;
-    border-radius: 100px;
-    }
-    .right .img2{
-        width: 500px;
-        background-color: rgba(218, 165, 32, 0.068);
-        background-size: 20%;
-        border-radius: 100px;
-        }
-    /* shop by section styling starts here */
-#shopby{
-    background-color: rgb(241, 205, 113);
-    margin: 50px 0;
-    border-radius: 100px;
-    
-}
-#shopby .shoptop{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 20vh;
-
-    padding: 0 20px;
-}
-#shopby .shoptop h1{
-    font-size: 50px;
-    text-transform:capitalize;
-    font-family: "Barlow Condensed", system-ui;
-    font-weight: 700;
-    font-style: normal;
-}
-#shopby .shoptop span{
-    font-weight: 100;
-    
-}
-#shopby .shoptop button{
-    padding: 10px 30px;
-    background-color: black;
-    color: white;
-   
-    letter-spacing: 2px;
-    border-radius: 10px;
-
-}
-#shopby .shopbtm{
-display: flex;
-justify-content: center;
-align-items: center;
-height: 60vh;
-}
-#shopby .shopbtm .cube{
-    width: 20%;
-    margin: 10px;
-    
-    height: 200px;
-    font-family: "Barlow Condensed", system-ui;
-    font-weight: 900;
-    font-style: normal;
-}
-#shopby .shopbtm .cube p{
-    margin: 20px;
-    font-family: "Barlow Condensed", system-ui;
-    font-weight: 600;
-    font-style: normal;
-}
-#shopby .shopbtm .cube a{
-    margin: 20px;
-    color: black;
-    text-decoration: underline;
-    letter-spacing: 2px;
-}
-#shopby .shopbtm .cube h3{
- margin: 20px;
-}
-    /* shop by section styling ends here */
-    /* grid section styling starts here */
-    #grid{
-        display: flex;
-        justify-content:center;
-        align-items: center;
-
-    }
-    .grid1{
-        height: 300px;
+      .left  button{
+        padding: 10px 20px;
         width: 200px;
         
-        margin: 20px;
+        border: 2px solid white;
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
     }
-    
-    .grid1 img{
-        width: 100%;
-        height: 100%;
-    }  
-    /* grid section styling ends here */
-    /* banner section styling starts here */
-.banner{
+
+
+/* hed content styling*/
+/* ad1 styling starts here */
+#ad1{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic{
+  
+    background-position: center;
+    background-size: cover;
+    width: 30%;
+    height: 70vh;
+    margin: 10px;
+    text-align: center;
+    padding: 40px;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.bannleft{
- 
-    width: 49vw;
-    height: 70vh;
-    background-image: url(imgs/home-banner.webp);
-    background-position: center;
-    background-size: cover;
-}
-.banner h4{
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: rgb(255, 204, 74);
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 800;
-    font-style: normal;
+    flex-direction: column;
     
 }
-.banner h1{
-      font-size: 40px;
-      margin: 20px 0;
-      word-spacing: 3px;
-        font-family: "Abril Fatface", serif;
+.pic h3{
+        font-family: "Protest Strike", sans-serif;
         font-weight: 400;
         font-style: normal;
-        text-transform: uppercase;
-        color: white;
-      }
-      
-.bancontent{
-    
-    margin: 40px;
-   
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 30px;
 }
-.banner p{
-    margin: 10px 0;
-    color: white;
-    font-family: "Barlow Condensed", system-ui;
-    font-weight: 600;
+.pic p {
+    font-family: "Noto Serif Old Uyghur", serif;
+    font-weight: 400;
     font-style: normal;
-    width: 65%;
+  }
+  
+.pic1{
+    background:linear-gradient(rgba(0, 0, 0, 0.61),rgba(0, 0, 0, 0.61)), url(imgs/Decent\ Black\ Loafer\ Handmade\ Leather\ Shoes.jpg);
 }
-.bannright{
-    width: 49vw;
+.pic2{
+    background-image: url(imgs/Penny\ Lane\ Loafer\ Black\ High\ Shine\ -\ SHOE\ US\ 9\ _\ Black.jpg);
+    
+}
+.pic3{
+    background-image: url(imgs/Zapatillas\ De\ Cuero\ Para\ Hombre\ Zapatos\ Altos\ Deportivos\ Cómodos\ De\ Moda\ Hip\ Hop.jpg);
+    
+}
+.pic button{
+    padding: 10px 20px;
+    width: 170px;
+    background:black;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    float: right;
+}
+
+
+/* ad1 styling ends here  */
+
+/* ad2 styling starts here  */
+#ad2{
     height: 70vh;
-    background-image: url(imgs/banner2.webp);
-    background-position: center;
-    background-size: cover;
+    background-image: url(imgs/add.webp);
 }
-    /* banner section styling ends here */
-    /* footer section styling starts here */
+
+
+
+/* ad2 styling ends here  */
+/* ceo styling starts here  */
+#ceo{
+    background-color: wheat;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#ceo img{
+    width: 400px;
+    margin: 20px;
+}
+#ceo .more{
+    width: 30vw;
+}
+#ceo .more h2{
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin: 20px;
+    font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal
+}
+#ceo .more p{
+
+    color: rgb(31, 60, 61);
+    font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal
+}
+#ceo .socials{
+    margin: 20px;
+}
+#ceo .socials i{
+    margin: 20px;
+    font-size: 30px;
+}
+#ceo .socials a{
+    color: rgb(73, 70, 70);
+}
+
+
+/* ceo styling ends here  */
+/* logo styling starts here  */
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#logo .brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.brands img {
+    width: 150px ;
+    margin: 10px;
+}
+
+
+#logo h2{
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin: 20px;
+    font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal
+}
+
+/* logo styling ends here  */
+
+ /* footer section styling starts here */
  #footer{
     display: flex;
     justify-content: center;
@@ -284,7 +307,7 @@ height: 60vh;
     color: white;
  }
  .footer{
-    background-color: rgb(36, 42, 61);
+    background-color: rgb(43, 43, 44);
     width: 90%;
     height: 90%;
     display: flex;
@@ -319,188 +342,275 @@ margin: 20px 0;
     outline: none;
 }
     /* footer section styling ends here */
-    /* responsive section styling starts here */
-
-    @media screen and (max-width:850px){
-            /* hed section styling starts here */
-
-        nav{
-            width: 100vw;
-        }
-        .content{
-            flex-direction: column;
-        }
-        .left{
-            width: 100%;
-            height: 50vh;
-            display: flex;
-            padding-left: 10px;
-
-            order: 2;
-        }
-        .left p{
-          
-                font-family: "Barlow Condensed", system-ui;
-                font-weight: 600;
-                font-style: normal;
-                margin: 10px 0;
-                width: 90vw;
-              }
-       
-        .right{
-            width: 50%;
-            height: 40vh;
-           order: 1;
-        }
-        .right .img1{
-            background-color: rgba(218, 165, 32, 0.068);
-            background-size: 20%;
-            border-radius: 100px;
-            width: 300px;
-            }
-            
-            .right .img2{
-                background-color: rgba(218, 165, 32, 0.068);
-                background-size: 20%;
-                border-radius: 100px;
-                width: 300px;
-                margin-top: 30px;
-                }
-                
-    /* hed section styling ends here */
-            /* grid section styling starts here */
-    #grid{
-       flex-direction: column;
-
-    }
-    .grid1{
-        height: 400px;
-        width: 300px;
-    }
-    
-    /* grid section styling ends here */
-        /* shop by section styling starts here */
-#shopby{
-    background-color: rgb(241, 205, 113);
-    margin: 50px 0;
-    border-radius: 10px;
-    height: 170vh;
-    margin: 10px;
-    
+/* responsive styling starts here */
+#close, #menu{
+    display: none;
 }
-#shopby .shoptop{
+
+    @media screen and (max-width:1001px){
+        /*  content styling*/
+
+
+.left{
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-start;
     flex-direction: column;
-    height: 30vh;
-    padding: 0 20px;
+    color: rgb(255, 255, 255);
 }
-#shopby .shopbtm{
-display: flex;
-justify-content:space-between;
-flex-direction: column;
-align-items: center;
-
-}
-#shopby .shopbtm .cube{
-    width: 90vw;
-    margin: 10px;
-    height: 40vh;
-    padding: 10px;
-     border: 1px solid black;
-}
-    /* shop by section styling ends here */
-    /* banner section styling starts here */
-.banner{
-    
-    flex-direction: column;
-}
-.bannleft{
-    width: 100vw;
-    height: 50vh;
-    background-image: url(imgs/home-banner.webp);
-    background-position: center;
-    background-size: cover;
-}
-.banner h4{
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: rgb(255, 204, 74);
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 800;
+.left h1{
+ font-size: 30px;
+ text-transform:capitalize;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    
-}
-.banner h1{
-      font-size: 25px;
-      margin: 20px 0;
-      word-spacing: 3px;
-        font-family: "Abril Fatface", serif;
+  }
+  .left h2{
+        font-family: "Barlow Condensed", system-ui;
         font-weight: 400;
         font-style: normal;
-        text-transform: uppercase;
-        color: white;
-      }
-      
-.bancontent{
-    
-    margin: 40px;
-   
-}
-.banner p{
-    margin: 10px 0;
-    color: white;
-    font-family: "Barlow Condensed", system-ui;
-    font-weight: 600;
+       font-size: 40px;
+       text-transform:capitalize;
+       margin: 0;
+
+  }
+  .left h4{
+    letter-spacing: 2px;
+ text-transform:capitalize;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    width: 100%;
-    font-size: 15px;
+  }
+.left p{
+  
+        font-family: "Barlow Condensed", system-ui;
+        font-weight: 600;
+        font-style: normal;
+        margin: 10px 0;
+        width: 70vw;
+      }
+  
+
+/* hed content styling*/
+          /* footer section styling starts here */
+     #footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+     }
+     .footer{
+        background-color: rgb(36, 42, 61);
+        width: 95vw;
+        height: 90vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+     }
+     #footer h2{
+        color: whitesmoke;
+        text-transform: capitalize;
+        margin: 20px 0;
+     }
+    .cell{
+        margin-left: 20px;
+        height: 200px;
+        width:90%;
+    }
+    .cell a{
+    display: block;
+    color: white;
+    font-family: "Abril Fatface", serif;
+            font-weight: 400;
+            font-style: normal;
+    }
+    .cell p{
+    width: 300px;
+    margin: 20px 0;
+    }
+    
+        /* footer section styling ends here */
+        
+/* ceo styling starts here  */
+#ceo{
+    background-color: wheat;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
 }
-.bannright{
-    width: 100vw;
-    height: 50vh;
-    background-image: url(imgs/banner2.webp);
-    background-position: center;
-    background-size: cover;
+#ceo img{
+    width: 80vw;
+    margin: 20px;
 }
-    /* banner section styling ends here */
-    /* footer section styling starts here */
- #footer{
+#ceo .more{
+    width: 90vw;
+}
+#ceo .more h2{
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin: 20px;
+    font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal
+}
+#ceo .more p{
+
+    color: rgb(31, 60, 61);
+    font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal
+}
+#ceo .socials{
+    margin: 20px;
+}
+#ceo .socials i{
+    margin: 20px;
+    font-size: 20px;
+}
+#ceo .socials a{
+    color: rgb(73, 70, 70);
+}
+
+
+/* ceo styling ends here  */
+      
+    }
+    @media screen and (max-width:487px){
+        #close, #menu{
+            display: block;
+        }
+        .list{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column; 
+       position: absolute;
+       background-color: white;
+       height: 70vh;
+       width: 50vw;
+       top: 10vh;
+       left: -2000px;
+       padding: 20px;
+       transition: 1s;
+    }
+    
+    .active{
+        left: 0;  
+    }
+    .downnav{
+        height: auto;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        color: rgb(255, 255, 255);
+        padding: 20px;
+    }
+    #hed{
+        background: url(imgs/back.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 110vh;
+    }
+    .hedcontent{
+        background-color: rgba(0, 0, 0, 0.336); 
+        height:50vh; 
+        display: flex;
+        justify-content:space-between;
+        align-items: flex-end;
+        flex-direction: column; 
+        padding: 30px;
+        color: white;
+       
+       }
+       .hedtop h1{
+        font-size: 40px;
+        text-transform: capitalize;
+        font-family: "Kay Pho Du", serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .hedtop p{
+        font-size: 20px;
+    }
+    .hedcontent button{
+        padding: 10px 20px;
+        width: 170px;
+        background: black;
+        border: 2px solid white;
+        color: white;
+        text-transform: uppercase;
+        float: right;
+        margin:  10px 0px;
+    }
+    .hedbtm {
+     width: 80vw;
+     color: white;
+    }
+    /* ad1 styling starts here */
+#ad1{
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.pic{
+  
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    margin: 10px;
+    text-align: center;
+    padding: 40px;
     color: white;
- }
- .footer{
-    background-color: rgb(36, 42, 61);
-    width: 95vw;
-    height: 90vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    color: white;
- }
- #footer h2{
-    color: whitesmoke;
-    text-transform: capitalize;
-    margin: 20px 0;
- }
-.cell{
-    margin-left: 20px;
-    height: 200px;
-    width:90%;
+    
 }
-.cell a{
-display: block;
-color: white;
-font-family: "Abril Fatface", serif;
+.pic h3{
+        font-family: "Protest Strike", sans-serif;
         font-weight: 400;
         font-style: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 30px;
 }
-.cell p{
-width: 300px;
-margin: 20px 0;
+.pic p {
+    font-family: "Noto Serif Old Uyghur", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.pic1{
+    background:linear-gradient(rgba(0, 0, 0, 0.61),rgba(0, 0, 0, 0.61)), url(imgs/Decent\ Black\ Loafer\ Handmade\ Leather\ Shoes.jpg);
+}
+.pic2{
+    background-image: url(imgs/Penny\ Lane\ Loafer\ Black\ High\ Shine\ -\ SHOE\ US\ 9\ _\ Black.jpg);
+    
+}
+.pic3{
+    background-image: url(imgs/Zapatillas\ De\ Cuero\ Para\ Hombre\ Zapatos\ Altos\ Deportivos\ Cómodos\ De\ Moda\ Hip\ Hop.jpg);
+    
+}
+.pic button{
+    padding: 10px 20px;
+    width: 170px;
+    background:black;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    float: right;
 }
 
-    /* footer section styling ends here */
+
+/* ad1 styling ends here  */
+
+
     }
-    /* responsive section styling ends here */
+ /* responsive styling starts here */

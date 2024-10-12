@@ -6,7 +6,7 @@
     list-style: none;
 }
 body{
-    background-color:/*rgba(25, 24, 35, 0.8) rgba(14, 13, 21, 0.8)*/rgba(8, 7, 11, 0.8);
+    background-color:/*rgba(25, 24, 35, 0.8) rgba(14, 13, 21, 0.8)*/rgba(255, 255, 255, 0.8);
 }
 section{
     max-width: 1500px;
@@ -21,7 +21,7 @@ section{
     opacity: 0;
     transition: 2s;*/
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.685)),url(../imgs/Group_140990_2x_3ef9317b-e647-4d10-b245-20bb15d5b5d8.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.685)),url(../shoes/Group_140990_2x_3ef9317b-e647-4d10-b245-20bb15d5b5d8.webp);
     background-position: center;
     background-size: cover;
     height: 30vh;
@@ -75,16 +75,17 @@ h4 a{
     flex-wrap: wrap;
 }
 .gallery{
-border: 1px solid rgb(236, 221, 6);
+border: 1px solid rgb(71, 71, 68);
 border-radius: 20px;
 width: 20%;
 min-height: 400px;
 margin: 10px;
 padding: 10px;
+box-shadow: 1px 2px 2px rgba(41, 40, 40, 0.384);
 
 }
 .gallery .desc{
-    color: white;
+    color: rgb(56, 56, 56);
 }
 .gallery img{
     width: 150px;
@@ -108,7 +109,7 @@ padding: 10px;
  margin: 10px;
 }
 .desc span{
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     padding: 2.5px 6px;
 }
 .desc button{
@@ -126,12 +127,12 @@ padding: 10px;
     margin: 10px 0;
 }
 .gallery:hover{
-   background-color: white;
+   background-color: rgb(85, 82, 82);
    transition: 1s;
     
 }
 .desc:hover{
-    color: black;
+    color: rgb(255, 255, 255);
     transition: 1s;
 }
 
@@ -151,10 +152,11 @@ padding: 10px;
     width: 60vw;
     height: 200px;
     margin: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px;
-    border-bottom: 1px solid yellow;
-    border-top: 1px solid yellow;
+    border-bottom: 1px solid rgb(14, 14, 13);
+    border-top: 1px solid rgb(3, 3, 3);
+    
 }
 .cartsitem img{
     width: 150px ;
@@ -166,10 +168,10 @@ padding: 10px;
 }
 .cartsitem input[type='number']{
  background: transparent;
- border:1px solid yellow;
+ border:1px solid rgb(10, 10, 10);
   width: 100px;
   padding: 5px;
-  color: rgb(255, 255, 255);
+  color: rgb(15, 15, 15);
 }
 .cartsitem input[type='submit']{
     background-color: rgb(8, 151, 79);
@@ -179,19 +181,19 @@ padding: 10px;
 
 }
 .cartsitem p i{
-    color: red;
+    color: rgb(7, 7, 7);
     
 }
 .total{
     font-size: 20px;
 }
 .totals{
-    border: 1px solid yellow;
+    border: 1px solid rgb(14, 14, 13);
     padding: 20px;
     text-align: center;
     height: 250px;
     margin: 50px 10px;
-    color: white;
+    color: rgb(14, 13, 13);
     width: 300px;
 }
 .totals h1{
@@ -205,9 +207,10 @@ padding: 10px;
 }
 .totals  button{
     padding: 10px 20px;
-    background-color: yellow;
+    background-color: rgb(7, 7, 7);
     color: rgb(0, 0, 0);
     border-radius: 10px;
+    color: white;
 }
 
 /* cart page styling ends here */
